@@ -1,0 +1,52 @@
+{
+  "name": "x86",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "@types/prismjs": "^1.16.4",
+    "core-js": "^3.6.5",
+    "prismjs": "^1.23.0",
+    "quasar": "^1.0.0",
+    "scroll-polyfill": "^0.1.1",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-prism-editor": "^1.2.2",
+    "vue-property-decorator": "^8.4.2",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^5.2.4",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-mocha": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^1.0.3",
+    "chai": "^4.1.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "html-inline-css-webpack-plugin": "^1.9.0",
+    "html-webpack-plugin": "^4.5.0",
+    "inline-chunk-html-plugin": "^1.1.1",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.9.3",
+    "vue-cli-plugin-quasar": "~3.0.1",
+    "vue-prism": "^1.0.5",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
