@@ -1,0 +1,28 @@
+########################################################################################################################
+# CPU CI CD Pipeline
+########################################################################################################################
+
+image: node:15.10.0
+ 
+stages:
+  - build
+  - test
+
+before_script:
+  - cd x86
+  - npm ci
+
+install_dependencies:
+  stage: build
+  script:
+    - export NODE_OPTIONS=--max_old_space_size=4096
+    - npm run build
+  artifacts:
+    paths:
+      - x86/dist
+
+unit_tests:
+  stage: test    
+  script: 
+    - export NODE_OPTIONS=--max_old_space_size=4096
+    - npm run test:unit

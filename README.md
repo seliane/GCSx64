@@ -3,6 +3,8 @@ GCSx64 is an open-source web-based animated x64 CPU simulator for educational pu
 Provided as a single HTML file for easy distribution and without installation on the Google Chrome Browser.
 Powered by [Unicorn.js](https://alexaltea.github.io/unicorn.js/), [Capstone.js](https://alexaltea.github.io/capstone.js/) and [NASM](https://nasm.us).
 
+You can try it online [here](https://seliane.github.io/).
+
 ## Features
 
 - Full NASM x64 assembly syntax support provided by built in NASM assembler

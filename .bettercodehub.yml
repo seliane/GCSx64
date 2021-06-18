@@ -1,0 +1,13 @@
+component_depth: 4
+default_excludes: true
+languages:
+  - typescript
+  - javascript
+exclude:
+  - .*/emulatorEnums\.ts
+  - .*/emulatorService\.ts
+  - .*/disassemblerEnum\.ts
+  - .*/disassemblerService\.ts
+  - .*/nasm\.js
+  - .*/ndisasm\.js
+  - .*/licensesToShow\.ts

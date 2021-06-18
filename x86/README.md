@@ -97,28 +97,28 @@ Build manuals and patches for external libraries can be found in [libraryPatches
 #### Unicorn.js
 
 For the x64 emulation we use the [Unicorn Engine](https://www.unicorn-engine.org/). 
-We use converted, modified and extended wrapper code from [Unicorn.js](https://github.com/AlexAltea/unicorn.js/blob/7ccd46b951f1df4c35f540acc5d5bc030a6f593d/src/unicorn-wrapper.js) in the [emulatorService](x86/src/services/emulator/emulatorService.ts).
+We use converted, modified and extended wrapper code from [Unicorn.js](https://github.com/AlexAltea/unicorn.js/blob/7ccd46b951f1df4c35f540acc5d5bc030a6f593d/src/unicorn-wrapper.js) in the [emulatorService](src/services/emulator/emulatorService.ts).
 
 #### Capstone.js
 
 To get instruction details we use the [Capstone disassembly engine](http://www.capstone-engine.org/).
-We use converted, modified and extended wrapper code from [Capstone.js](https://github.com/AlexAltea/capstone.js/blob/75c34477675318ab3423a0c8236eb96b8abed39b/src/capstone-wrapper.js) in the [disassemblerService](x86/src/services/disassembler/disassemblerService.ts).
+We use converted, modified and extended wrapper code from [Capstone.js](https://github.com/AlexAltea/capstone.js/blob/75c34477675318ab3423a0c8236eb96b8abed39b/src/capstone-wrapper.js) in the [disassemblerService](src/services/disassembler/disassemblerService.ts).
 
 #### NASM and NDISAM
 
 To assemble and disassemble we use [Netwide Assembler and Disassembler](https://www.nasm.us).
 
 ## Project structure
-- [lib](x86/lib) contains modified and compiled external libraries. Build manuals and patches can be found in [libraryPatches](libraryPatches).
-- [public](x86/public) contains the main html file that Vue injects its code into
-- [src](x86/src) contains the project code
-    - [components](x86/src/components) contains Vue pages and components
-    - [router](x86/src/router) contains Vue router setup for page navigation
-    - [services](x86/src/services) contains application logic and access to external libraries
-    - [styles](x86/src/styles) contains CSS for Quasar
-- [tests](x86/tests) contains unit tests for Vue components and services
-- [typescriptTypes](x86/typescriptTypes) contains declarations for TypeScript
-- [vue.config.js](x86/vue.config.js) configuration to set up webpack single HTML file bundling
+- [lib](lib) contains modified and compiled external libraries. Build manuals and patches can be found in [libraryPatches](libraryPatches).
+- [public](public) contains the main html file that Vue injects its code into
+- [src](src) contains the project code
+    - [components](src/components) contains Vue pages and components
+    - [router](src/router) contains Vue router setup for page navigation
+    - [services](src/services) contains application logic and access to external libraries
+    - [styles](src/styles) contains CSS for Quasar
+- [tests](tests) contains unit tests for Vue components and services
+- [typescriptTypes](typescriptTypes) contains declarations for TypeScript
+- [vue.config.js](vue.config.js) configuration to set up webpack single HTML file bundling
 - web project related files
 
 
